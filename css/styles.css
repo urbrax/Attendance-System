@@ -11,6 +11,7 @@
 html{
   scroll-behavior: smooth;
   background-color: lightgray;
+  overflow-x: hidden;
 }
 
 a {
@@ -156,7 +157,7 @@ footer {
   border: 5px solid #000000;
   background-color: #000000;
   position: absolute;
-  bottom: 50px;
+  bottom: 65px;
   left: 50%;
   display: inline-block;
   -webkit-transform: translate(0, -50%);
