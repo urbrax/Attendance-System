@@ -10,7 +10,7 @@
   Other browsers check support*/
 html{
   scroll-behavior: smooth;
-  background-color: lightgray;
+  background-color: #D3D3D3;
   overflow-x: hidden;
 }
 
@@ -60,13 +60,14 @@ footer {
 }
 
 #main-content2 {
-  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.5), rgba(255, 255, 255, 0.5)), url('../images/bg2.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: calc(100vh - 80px);
-  display: flex;
-  flex-direction: row;
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.5), rgba(255, 255, 255, 0.5)), url('../images/bg2.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: calc(100vh - 80px);
+	display: flex;
+    padding: 30px;
 }
+
 
 #nav-list a {
   font-size: 20px;
@@ -75,12 +76,12 @@ footer {
 }
 
 #nav-list a:hover {
-  background: #ffffff;
+  background: #FFFFFF;
 }
 
-#nav-list a:active {
-  text-decoration: underline;
-  background-color: #999;
+/*To show active link color*/
+.active {
+  background-color: #FCFAFB;
   color: #FFFFFF;
 }
 
@@ -96,8 +97,8 @@ footer {
 }
 
 .navbar-default {
-  background-color: #ff4500;
-  border: 2px solid #ff8c00;
+  background-color: #FF4500;
+  border: 2px solid #FF8C00;
   border-radius: 0;
   padding: 2px;
 }
@@ -108,25 +109,17 @@ footer {
   margin-bottom: 0px;
 }
 
-.left-side{
-  float: left;
-}
-
-.right-side{
-  float: right;
-}
-
 .main-heading{
   color: #FFFFFF;
   text-shadow:
-    -1px -1px 0 #000,
-     0   -1px 0 #000,
-     1px -1px 0 #000,
-     1px  0   0 #000,
-     1px  1px 0 #000,
-     0    1px 0 #000,
-    -1px  1px 0 #000,
-    -1px  0   0 #000;
+    -1px -1px 0 #000000,
+     0   -1px 0 #000000,
+     1px -1px 0 #000000,
+     1px  0   0 #000000,
+     1px  1px 0 #000000,
+     0    1px 0 #000000,
+    -1px  1px 0 #000000,
+    -1px  0   0 #000000;
   margin-top: 58px;
   font-family: 'Open Sans', sans-serif;
   font-size: 70px;
@@ -162,13 +155,125 @@ footer {
   display: inline-block;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
-  color: #ffffff ;
+  color: #FFFFFF;
 }
 
 .scroll a:hover {
   opacity: .5;
   text-decoration: none;
 }
+
+
+/*Forms*/
+.form-content {
+    background-color: #FFFFFF;
+    margin: 15px;
+    padding: 0 0 15px 0;
+    border-radius: 10px;
+    position: relative;
+}
+
+.top-color, .top-color2 {
+    height: 15px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    
+}
+.top-color { 
+    background-color: #F52707;
+}
+.top-color2 {
+    background-color: #F57A07;
+}
+
+.req-color {
+    color: #ff0000;
+}
+
+.body{
+    margin-top: 30px;
+	margin-bottom:20px;
+}
+
+.body h2{
+	margin-top:40px;
+}
+
+input[type] {
+    border: none;
+    border-bottom: 1px solid #AFADAD;
+    outline: none;
+    padding: 5px;
+}
+
+.without_ampm::-webkit-datetime-edit-ampm-field {
+	display: none;
+ }
+ input[type=time]::-webkit-clear-button {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   -o-appearance: none;
+   -ms-appearance:none;
+   appearance: none;
+   margin: -10px; 
+ }
+ input[type="time"]::-webkit-calendar-picker-indicator {
+    background: none;
+    width: 2px;
+}
+
+select {
+	outline: none;
+    border: none;
+    width: 62.5px;
+}
+
+#left-side{
+	padding:50px;
+}
+
+#right-side{
+	padding:50px;
+}
+
+#btn {
+    background-color: #F52707;
+    transition: all 0.3s ease 0s;
+	border: 0;
+	padding: 6px;
+    border-radius: 6px;
+    width: 120px;
+	height:35px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#btn:hover {
+    background-color: #FFFFFF;
+    color: #F52707;
+}
+
+#btn2 { 
+    background-color: #F57A07;
+    transition: all 0.3s ease 0s;
+	border:0;
+	padding: 6px;
+    border-radius: 6px;
+    width: 120px;
+	height:35px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#btn2:hover {
+    background-color: #FFFFFF;
+    color: #F57A07;
+}
+
 
 /**********************************************
             For Responsivess
@@ -178,7 +283,7 @@ footer {
 @media (min-width: 992px){
 
   .row{
-      display: block;
+      display: flex;
   }
 
   #main-content2{
@@ -190,18 +295,6 @@ footer {
     height: 100%;
     justify-content: center;
 }
-
-  .left-side{
-      margin: 0px 0px;
-      width: 100%;
-      flex-wrap: wrap;
-  }
-  
-  .right-side{
-      margin: 0px 0px;
-      flex-wrap: wrap;
-      width: 100%;
-  }
 }
 
 /* For Tablet/Medium devices*/ 
@@ -209,40 +302,22 @@ footer {
 {
 
   .row{
-      display: block;
+      display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      padding: 0px 0px;
+	  justify-content:center;
   }
 
   #main-content2{
-      margin: 0px 0px;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       background-size: 100% 100%;
       height: 100%;
   }
-  h2:after{
-    content:" (Tablet View)";
-  }
-
-  .left-side{
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
   
-  .right-side{
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-
-  footer{
-    bottom: 0;
+  h1:after{
+    content:" (Tablet View)";
   }
 }
 
@@ -253,16 +328,25 @@ footer {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      padding: 0px 0px;
+	  justify-content:center;
   }
+  
+  #left-side{
+		padding:0px;
+		margin-bottom:10px;
+	}
+	
+  #right-side{
+    	padding:0px;
+	}
 
-  h2 {
+  h1 {
     display: none;
   }
 
   #main-content{
     background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.5), rgba(255, 255, 255, 0.5)), url('../images/bg1.png');
-    height: 500px;
+    height: 600px;
     justify-content: center;
     background-size: 100% 100%;
   }
@@ -274,30 +358,9 @@ footer {
   #main-content2{
       margin: 0px 0px;
       margin-top: 0px;
-      display: flex;
-      flex-direction: column;
       width: auto;
       justify-content: center;
       background-size: 100% 100%;
       height: 100%;
-  }
-
-  .left-side{
-      margin: auto;
-      display: flex;
-      width: auto;
-      justify-content: center;
-  }
-  
-  .right-side{
-      margin: auto;
-      width: auto;
-      display: flex;
-      justify-content: center;
-  }
-
-  footer{
-    bottom: 0;
-    justify-content: space-evenly;
   }
 }
