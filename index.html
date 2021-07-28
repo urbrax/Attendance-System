@@ -1,106 +1,179 @@
 <!--HTML Declaration-->
 <!DOCTYPE html>
 <html lang="en">
-
-<!--Head section-->
-
-<head>
-  <!--Meta tags-->
-  <meta name="author" content="Ulysses Rodrigues">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Academo Online Attendance (AOA)</title>
-
-  <!--CSS-->
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!--In case bootstrap offline fails to load & for search icon-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
-  <!--Google Fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
-
-</head>
-
-<!--Body Section-->
-
-<body>
-  <header>
-    <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-
-          <div class="navbar-brand">
-            <a href="#" class="pull-left"><img src="images/Academo_logo.png" class="logo" alt="Academo"></a>
-          </div>
-
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav"
-            aria-expanded="true" aria-label="Toggle navigation">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-
-        <div id="collapsable-nav" class="collapse navbar-collapse">
-          <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li>
-              <a href="#" class="active">Home</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#videos">Videos</a>
-            </li>
-            <li>
-              <a href="#contactus">Contact Us</a>
-            </li>
-            <li>
-              <!--For search icon-->
-              <a href="#search"><i class="glyphicon glyphicon-search"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <section id="main-content" class="scroll">
-    <h2 class="main-heading">Welcome to the Academo Online Attendance System</h2>
-    <h2 class="main-heading visible-xs">AOA <br>(Mobile View)</h2>
-    <a href="#main-content2"><span class="glyphicon glyphicon-menu-down hidden-xs"></span></a>
-
-  </section>
-
-  <div class="row">
-    <section id="main-content2">
-      <h2 class="hidden">Well nothing should appear</h2>
-      <div class="left-side">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSe3vCZZ3OGNE7t-Lflu_NzvRCOcSrS1gdItu9ya4t4IMBIeIg/viewform?embedded=true"
-          width="500" height="530" frameborder="0" scrolling="no"></iframe>
-      </div>
-      <div class="right-side">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSeiR9ReWpHl-OxbUvq93QZvB3opYToKewVxCpsZPS0xD8puGg/viewform?embedded=true"
-          width="500" height="530" frameborder="0" scrolling="no"></iframe>
-      </div>
-    </section>
-  </div>
-  <footer>
-    &#169; 2021 Academo Inc. All rights reserved
-  </footer>
-
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
-
+   <!--Head section-->
+   <head>
+      <!--Meta tags-->
+      <meta name="author" content="Ulysses Rodrigues">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+      <title>Academo Online Attendance (AOA)</title>
+	  
+      <!--CSS-->
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+	  
+      <!--In case bootstrap offline fails to load & for search icon-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	  
+      <!--Google Fonts-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+	  
+   </head>
+   <!--Body Section-->
+   <body>
+      <header>
+         <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+               <div class="navbar-header">
+                  <div class="navbar-brand">
+                     <a href="#" class="pull-left"><img src="images/Academo_logo.png" class="logo" alt="Academo"></a>
+                  </div>
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav"
+                     aria-expanded="true" aria-label="Toggle navigation">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+               </div>
+               <div id="collapsable-nav" class="collapse navbar-collapse">
+                  <ul id="nav-list" class="nav navbar-nav navbar-right">
+                     <li>
+                        <a href="#" class="active">Home</a>
+                     </li>
+                     <li>
+                        <a href="#about">About</a>
+                     </li>
+                     <li>
+                        <a href="#videos">Videos</a>
+                     </li>
+                     <li>
+                        <a href="#contact-us">Contact Us</a>
+                     </li>
+                     <li>
+                        <!--For search icon-->
+                        <a href="#search"><i class="glyphicon glyphicon-search"></i></a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+	  
+	  <!--Section that follows the first bacground image and arrow down button when clicked-->
+      <section id="main-content" class="scroll">
+         <h1 class="main-heading hidden-xs">Welcome to the Academo Online Attendance System</h1>
+         <h1 class="main-heading visible-xs">AOA <br>(Mobile View)</h1>
+         <a href="#main-content2"><span class="glyphicon glyphicon-menu-down hidden-xs"></span></a>
+      </section>
+	  
+	  <!--Section that follows the second bacground image and both the forms-->
+      <section id="main-content2">
+         <div class="container block">
+            <div class="row">
+				<!--First form-->
+               <div id="left-side" class="col-lg-6 col-xl-6 col-md-6 col-sm-6">
+                  <div class="row form-content">
+                     <div class="col-xs-12 col-sm-12">
+                        <div class="top-color"></div>
+                        <div class="body">
+                           <h2>TIME IN</h2>
+                           <p>Attendance login</p>
+                           <p style="color: #FF0000;">*Required</p>
+                        </div>
+                     </div>
+                  </div>
+				  
+                  <div class="row form-content">
+                     <div class="col-xs-12 col-sm-12">
+                        <div class="top"></div>
+                        <div class="body">
+                           <p>Name <span class="req-color">*</span></p>
+                           <br>
+                           <input type="text" name="name1" id="name1" placeholder="Your answer" required>
+                        </div>
+                     </div>
+                  </div>
+				  
+                  <div class="row form-content">
+                     <div class="col-xs-12 col-sm-12">
+                        <div class="top"></div>
+                        <div class="body">
+                           <p>Time In <span class="req-color">*</span></p>
+                           <br>
+                           <span style="color: #999999;">Time</span><br>
+                           <input class="without_ampm" type="time" min="08:00" max="23:00" name="time_in" id="time_in" required>
+						   <span class="validity"></span>
+						   
+                           <select name="meridiem" id="GMT">
+                              <option value="AM">AM</option>
+                              <option value="PM">PM</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <button type="submit" id="btn">Submit</button>
+               </div>
+			   
+			   <!--Second form-->
+               <div id="right-side" class="col-lg-6 col-xl-6 col-md-6 col-sm-6">
+                  <div class="row form-content">
+                     <div class="col-xs-12 col-sm-12">
+                        <div class="top-color2"></div>
+                        <div class="body">
+                           <h2>TIME OUT</h2>
+                           <p>Attendance login</p>
+                           <p style="color: #FF0000;">*Required</p>
+                        </div>
+                     </div>
+                  </div>
+				  
+                  <div class="row form-content">
+                     <div class="col-xs-12 col-sm-12">
+                        <div class="top"></div>
+                        <div class="body">
+                           <p>Name <span class="req-color">*</span></p>
+                           <br>
+                           <input type="text" name="name2" id="name2" placeholder="Your answer" required>
+                        </div>
+                     </div>
+                  </div>
+				  
+                  <div class="row form-content">
+                     <div class="col-xs-12 col-sm-12">
+                        <div class="top"></div>
+                        <div class="body">
+                           <p>Time Out <span class="req-color">*</span></p>
+                           <br>
+                           <span style="color: #999999;">Time</span><br>
+                           <input class="without_ampm" type="time" min="08:00" max="23:00" name="time_out" id="time_out" required>
+						   <span class="validity"></span>
+                           <select name="meridiem" id="GMT2">
+                              <option value="AM">AM</option>
+                              <option value="PM">PM</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <button type="submit" id="btn2">Submit</button>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+	  <!--Footer-->
+      <footer>
+         &#169; 2021 Academo Inc. All rights reserved
+      </footer>
+	  
+      <!-- jQuery (Bootstrap JS plugins depend on it) -->
+      <script src="js/jquery-2.1.4.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/script.js"></script>
+   </body>
 </html>
