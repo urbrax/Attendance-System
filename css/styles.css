@@ -51,26 +51,26 @@ footer {
 
 /*Ids*/
 #main-content {
-  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.5), rgba(255, 255, 255, 0.5)), url('../images/bg1.png');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/bg1.png');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: calc(100vh - 80px);
+  background-size: cover;
+  height: 100vh;
   display: flex;
   flex-direction: row;
+  background-position: center;
 }
 
 #main-content2 {
-    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.5), rgba(255, 255, 255, 0.5)), url('../images/bg2.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/bg2.jpg');
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	height: calc(100vh - 80px);
+	background-size: cover;
+	height: 100vh;
 	display: flex;
     padding: 30px;
 }
 
 
 #nav-list a {
-  font-size: 20px;
   color: #000000;
   text-align: center;
 }
@@ -88,52 +88,22 @@ footer {
 /*Classes*/
 
 .logo {
-  width: 200px;
-  height: 70px;
+  width: 160px;
   position: fixed;
-  top: 0;
+  top: 5.5px;
   left: 0;
-  padding: 10px;
-}
-
-.navbar-default {
-  background-color: #FF4500;
-  border: 2px solid #FF8C00;
-  border-radius: 0;
-  padding: 2px;
-}
-
-.container>.navbar-header {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 0px;
 }
 
 .main-heading{
   color: #FFFFFF;
-  text-shadow:
-    -1px -1px 0 #000000,
-     0   -1px 0 #000000,
-     1px -1px 0 #000000,
-     1px  0   0 #000000,
-     1px  1px 0 #000000,
-     0    1px 0 #000000,
-    -1px  1px 0 #000000,
-    -1px  0   0 #000000;
-  margin-top: 58px;
   font-family: 'Open Sans', sans-serif;
   font-size: 70px;
   text-align: center;
-  padding: 200px 0 50px;
+  margin: auto;
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 2px solid black;
-}
-
-.container>navbar-header {
-  padding: 0;
-  margin: 0;
+  border: 1px solid black;
 }
 
 .container {
@@ -141,21 +111,15 @@ footer {
   width: 100%;
 }
 
-.navbar-collapse {
-  margin-left: 0;
-  margin-right: 0;
-}
-
 .scroll a {
-  border: 5px solid #000000;
-  background-color: #000000;
   position: absolute;
-  bottom: 65px;
+  bottom: 0px;
   left: 50%;
   display: inline-block;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   color: #FFFFFF;
+  font-size: xx-large;
 }
 
 .scroll a:hover {
@@ -291,8 +255,8 @@ select {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-size: 100% 100%;
-    height: 100%;
+    background-size: cover;
+    height: 100vh;
     justify-content: center;
 }
 }
@@ -307,17 +271,18 @@ select {
       flex-wrap: wrap;
 	  justify-content:center;
   }
-
+  
   #main-content2{
       display: flex;
       flex-direction: row;
       align-items: center;
-      background-size: 100% 100%;
-      height: 100%;
+      background-size: cover;
+      height: 100vh;
+	  background-position: center;
   }
   
   h1:after{
-    content:" (Tablet View)";
+    content:"	(Tablet View)";
   }
 }
 
@@ -345,10 +310,11 @@ select {
   }
 
   #main-content{
-    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.5), rgba(255, 255, 255, 0.5)), url('../images/bg1.png');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/bg1.png');
     height: 600px;
     justify-content: center;
-    background-size: 100% 100%;
+    background-size: cover;
+	background-position: center;
   }
 
   .scroll a{
@@ -360,7 +326,8 @@ select {
       margin-top: 0px;
       width: auto;
       justify-content: center;
-      background-size: 100% 100%;
+      background-size: cover;
       height: 100%;
+	  background-position: center;
   }
 }
